@@ -6,10 +6,10 @@ class Graph:
         self.vertices = {}
         self.verticeslist =[0]*numvertex
 
-    def set_vertex(self,vtx,id):
-        if 0<=vtx<=self.numvertex:
-            self.vertices[id] = vtx
-            self.verticeslist[vtx] = id
+    def set_vertex(self,key,value):
+        if 0<=key<=self.numvertex:
+            self.vertices[value] = key
+            self.verticeslist[key] = value
 
     def set_edge(self,frm,to,cost=0):
         frm = self.vertices[frm]
